@@ -25,7 +25,7 @@ func filterValue(valuations []valuation, price int) []valuation {
 	return filteredValues
 }
 
-func filterInChunks(s []valuation, streets []string, price int, x int) []valuation {
+func filterInChunks(s []valuation, price int) []valuation {
 	//takes a slice and splits into smaller chunks, runs the filter on each chunk and then joins them all together
 	c := splitSplices(s)
 	c1 := filterSplices(c, price)
